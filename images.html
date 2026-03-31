@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Create a webpage</h1>
+
+    <p><b>Relative Path Image:</b></p>
+    <img src="images\local-photo.jpg" alt="Local Image" width="300" height="200">
+
+    <p><b>Absolute Path Image:</b></p>
+    <img src="https://img.freepik.com/premium-photo/colored-political-world-map-with-country-borders-geographic-features_947814-199130.jpg?w=2000" alt="Remote Map" width="300" height="200">
+
+    <hr>
+
+    <p><b>Click a continent to learn more:</b></p>
+    <img src="images\local-photo.jpg" 
+     alt="World Map" 
+     usemap="#world-map" 
+     width="1000" 
+     height="500" 
+     style="display: block; border: 1px solid #ccc;">
+
+<map name="world-map">
+    <area shape="poly" 
+          coords="191,267,83,172,47,74,80,49,318,19,347,13,449,15,205,186,155,196" 
+          alt="North-America" 
+          href="https://www.britannica.com/place/North-America" 
+          target="_blank">
+    
+    <area shape="poly" 
+          coords="267,256,301,286,359,319,272,484,202,309,209,284,215,262" 
+          alt="South-America" 
+          href="https://www.sciencedirect.com/topics/social-sciences/south-america" 
+          target="_self">
+    
+    <area shape="poly" 
+          coords="438,182,493,162,561,182,638,259,591,389,543,425,515,359,501,279,435,277,419,245,419,213" 
+          alt="Africa" 
+          href="https://en.wikipedia.org/wiki/Africa" 
+          target="_top">
+
+    <area shape="poly" 
+          coords="506,60,622,47,686,32,830,46,945,61,863,313,735,260,621,239,565,153,448,156" 
+          alt="Asia" 
+          href="https://www.britannica.com/place/Asia" 
+          target="_parent">
+
+    <area shape="poly" 
+          coords="927,439,969,422,963,317,919,304,845,377,847,426" 
+          alt="Australia" 
+          href="https://www.britannica.com/place/Australia" 
+          target="_top">
+</map>
+
+</body>
+</html>
